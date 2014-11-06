@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    {{ include "theme.metadata" }}
+</head>
+<body>
+
+<div class="row">
+    <div class="large-12 columns">
+        <h1>Lexicon Demo \ {{ title }}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="large-4 medium-4 columns">
+        {{ include "theme.navigation" }}
+    </div>
+    <div class="large-8 medium-8 columns">
+        {{ yield "content" }}
+    </div>
+</div>
+
+{{ include "theme.footer" }}
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

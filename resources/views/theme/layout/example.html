@@ -1,0 +1,16 @@
+{{ extends "theme.layout.master" }}
+
+{{ section "content" }}
+<div class="panel data">
+    <h5>Data</h5>
+    <pre>{{ data }}</pre>
+</div>
+<div class="panel location">
+    <h5>Template /resources/views/example/{{ location }}.html</h5>
+    <pre>{{ template }}</pre>
+</div>
+<div class="panel example">
+    <h5>Result</h5>
+    {{{ example }}}
+</div>
+{{ stop }}
